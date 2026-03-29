@@ -61,5 +61,3 @@ forensic_recordings/
 
 ## ⚖️ Disclaimer
 This software is intended for professional forensic and acoustic analysis. Ensure your use of this tool complies with local laws regarding audio recording and privacy.
-```
-
