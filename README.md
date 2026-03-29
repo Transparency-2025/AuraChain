@@ -22,3 +22,44 @@
 1. **Install PortAudio (via Homebrew):**
    ```bash
    brew install portaudio
+   ```
+
+2. **Clone and Setup Environment:**
+   ```bash
+   git clone https://github.com/yourusername/aurachain.git
+   cd aurachain
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. **Install Dependencies:**
+   ```bash
+   pip install sounddevice soundfile numpy
+   ```
+
+## 🚀 Usage
+
+1. **Configure:** Edit `forensic_recorder.py` to set your `CASE_ID` and `DEVICE_SUBSTRING`.
+2. **Run:**
+   ```bash
+   python forensic_recorder.py
+   ```
+3. **Permissions:** macOS will prompt for Microphone access. Grant permissions in *System Settings > Privacy & Security*.
+
+## 📂 Data Structure
+The tool generates a standardized forensic directory:
+```text
+forensic_recordings/
+└── CASE_2024_001/
+    └── 2024-05-20/
+        └── UMIK_1_Omni_Mic/
+            ├── manifest.txt              # Contains MD5 hashes & timestamps
+            ├── CASE_2024_001_PART001.wav
+            └── CASE_2024_001_PART002.wav
+```
+
+## ⚖️ Disclaimer
+This software is intended for professional forensic and acoustic analysis. Ensure your use of this tool complies with local laws regarding audio recording and privacy.
+```
+
